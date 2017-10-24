@@ -1,0 +1,284 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jsuarez</groupId>
+	<artifactId>worker-queue</artifactId>
+	<version>1.0.0</version>
+	<name>worker-queue</name>
+	<packaging>jar</packaging>	
+
+    <build>
+        <finalName>worker-queue</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <inherited>true</inherited>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>appassembler-maven-plugin</artifactId>
+                <version>1.1.1</version>
+                <configuration>
+                    <assembleDirectory>target</assembleDirectory>
+                    <programs>
+                        <program>
+                            <mainClass>launch.Main</mainClass>
+                            <name>webapp</name>
+                        </program>
+                        <program>
+                          <mainClass>com.jsuarez.WorkerProcess</mainClass>
+                          <name>worker</name>
+                        </program>
+                        <program>
+                          <mainClass>com.jsuarez.TestHeroku</mainClass>
+                          <name>test</name>
+                        </program>
+                        <program>
+                          <mainClass>com.jsuarez.RuntimeRunner</mainClass>
+                          <name>run</name>
+                        </program>
+                        
+                    </programs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>assemble</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.glassfish.jersey</groupId>
+                <artifactId>jersey-bom</artifactId>
+                <version>${jersey.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+    <artifactId>herokuworker</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.2</version>
+</dependency>
+
+<dependency>
+    <artifactId>migrateaccountswithopptys_0_1</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+
+<dependency>
+    <artifactId>advancedPersistentLookupLib-1.0</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>activation</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>axiom-api</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>axiom-impl</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>axis2-adb</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>axis2-kernel</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>axis2-transport-http</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>axis2-transport-local</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>commons-codec</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>commons-httpclient</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>commons-logging</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<!--<dependency>
+    <artifactId>dom4j</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>geronimo-stax-api</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>-->
+<dependency>
+    <artifactId>httpcore</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>log4j</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>mail</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>neethi</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>salesforceCRMManagement</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>systemRoutines</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>userRoutines</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>wsdl4j</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>wstx-asl</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+<dependency>
+    <artifactId>xmlschema-core</artifactId>
+    <groupId>com.javier.local</groupId>
+    <version>1.0.0</version>
+</dependency>
+
+        <dependency>
+          <groupId>com.rabbitmq</groupId>
+          <artifactId>amqp-client</artifactId>
+          <version>3.3.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-servlet-core</artifactId>
+            <!-- use the following artifactId if you don't need servlet 2.x compatibility -->
+            <!-- artifactId>jersey-container-servlet</artifactId -->
+        </dependency>
+        
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-moxy</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>${tomcat.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-logging-juli</artifactId>
+            <version>${tomcat.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+            <version>${tomcat.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-jasper</artifactId>
+            <version>${tomcat.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-jasper-el</artifactId>
+            <version>${tomcat.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-jsp-api</artifactId>
+            <version>${tomcat.version}</version>
+        </dependency>
+
+        <!-- Uncomment if you want your application use postgresql
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.4-1201-jdbc4</version>
+        </dependency>
+    	-->
+
+        <!-- For test purposes -->
+        <dependency>
+            <groupId>org.glassfish.jersey.test-framework.providers</groupId>
+            <artifactId>jersey-test-framework-provider-bundle</artifactId>
+            <type>pom</type>
+            <scope>test</scope>
+        </dependency>
+
+
+        
+    </dependencies>
+    <properties>
+        <jersey.version>2.17</jersey.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <tomcat.version>7.0.57</tomcat.version>
+    </properties>
+    <repositories>
+        <!--other repositories if any-->
+        <repository>
+            <id>project.local</id>
+            <name>project</name>
+            <url>file:${project.basedir}/repo</url>
+        </repository>
+    </repositories>
+</project>
