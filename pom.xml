@@ -73,133 +73,289 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-    <artifactId>herokuworker</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.2</version>
+        
+<dependency>
+    <artifactId>post_test_job_0_1</artifactId>
+    <groupId>com.javier.local</groupId>    
+    <version>0.1</version>
 </dependency>
 
 <dependency>
-    <artifactId>migrateaccountswithopptys_0_1</artifactId>
     <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
+    <artifactId>routines</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>ST4-4.0.7</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>annotation-2.4.0</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>antlr-2.7.7</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>antlr-runtime-3.5</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>antlr4-runtime-4.6</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>auto-common-0.3</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>auto-service-1.0-rc2</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>avro-1.8.1</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>commons-beanutils-1.8.0</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>commons-codec-1.6</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>commons-collections-3.2</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>commons-compress-1.8.1</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>commons-lang3-3.4</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>commons-logging-1.1.1</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>components-api-0.19.2</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>components-common-0.19.2</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>components-common-oauth-0.19.2</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>components-salesforce-definition-0.19.2</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>components-salesforce-runtime-0.19.2</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>daikon-0.17.0</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>dom4j-1.6.1</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>force-partner-api-39.0.0</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>force-wsc-39.0.5</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>guava-19.0</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>jackson-annotations-2.5.3</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>jackson-core-2.5.3</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>jackson-core-asl-1.9.13</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>jackson-databind-2.5.3</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>jackson-mapper-asl-1.9.13</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>javacsv-2.0</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>javax.inject-1</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>javax.servlet-api-3.1.0</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>jcl-over-slf4j-1.6.6</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>jetty-http-9.2.19.v20160908</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>jetty-io-9.2.19.v20160908</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>jetty-server-9.2.19.v20160908</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>jetty-util-9.2.19.v20160908</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>joda-time-2.8.2</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>json-20131018</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>json-io-4.9.9-TALEND</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>json-simple-1.1.1</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>log4j-1.2.16</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>org.apache.oltu.oauth2.client-1.0.0</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>org.apache.oltu.oauth2.common-1.0.0</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>paranamer-2.7</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>pax-url-aether-2.4.7</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>slf4j-api-1.7.12</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>slf4j-log4j12-1.7.2</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>snappy-java-1.1.1.3</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>stringtemplate-3.2.1</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>talend-codegen-utils</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>talend_file_enhanced_20070724</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>talendcsv</artifactId>
+    <version>0.1</version>
+</dependency>
+<dependency>
+    <groupId>com.javier.local</groupId>
+    <artifactId>xz-1.5</artifactId>
+    <version>0.1</version>
 </dependency>
 
-<dependency>
-    <artifactId>advancedPersistentLookupLib-1.0</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>activation</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>axiom-api</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>axiom-impl</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>axis2-adb</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>axis2-kernel</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>axis2-transport-http</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>axis2-transport-local</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>commons-codec</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>commons-httpclient</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>commons-logging</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<!--<dependency>
-    <artifactId>dom4j</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>geronimo-stax-api</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>-->
-<dependency>
-    <artifactId>httpcore</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>log4j</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>mail</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>neethi</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>salesforceCRMManagement</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>systemRoutines</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>userRoutines</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>wsdl4j</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>wstx-asl</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
-<dependency>
-    <artifactId>xmlschema-core</artifactId>
-    <groupId>com.javier.local</groupId>
-    <version>1.0.0</version>
-</dependency>
 
         <dependency>
           <groupId>com.rabbitmq</groupId>

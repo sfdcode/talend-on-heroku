@@ -5,7 +5,7 @@
  */
 package com.jsuarez;
 
-import myprojects.migrateaccountswithopptys_0_1.MigrateAccountsWithOpptys;
+import local_project.post_test_job_0_1.Post_Test_Job;
 
 /**
  *
@@ -14,8 +14,7 @@ import myprojects.migrateaccountswithopptys_0_1.MigrateAccountsWithOpptys;
 public class RuntimeRunner {
     
     public static void main(String[] args){        
-        //HerokuWorker.main(args);
-        MigrateAccountsWithOpptys.main(args);
+        Post_Test_Job.main(args);
     }
     
 }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.javier.local</groupId>
+  <artifactId>pax-url-aether-2.4.7</artifactId>
+  <versioning>
+    <release>0.1</release>
+    <versions>
+      <version>0.1</version>
+    </versions>
+    <lastUpdated>20171026130349</lastUpdated>
+  </versioning>
+</metadata>
